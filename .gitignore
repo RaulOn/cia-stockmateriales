@@ -1,0 +1,26 @@
+# Binarios
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary con `go test -c`
+*.test
+
+# Coverage tools
+*.out
+
+# Dependencias
+vendor/
+
+# Workspace file
+go.work
+
+# GoLand
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws

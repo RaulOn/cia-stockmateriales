@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: goginbasic
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: ciaalicorp.azurecr.io/dev/goginbasic:$(Build.BuildId)
+      imagePullSecrets:
+        - name: acr-ciaalicorp
